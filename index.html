@@ -22,18 +22,21 @@
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
           <img
+            id="userImage"
             src="https://lorempixel.com/185/185/people/"
             alt="Foto pessoal"
           />
         </div>
 
         <h1 id="userName">Lucas Cavalcante</h1>
-        <a href="https://github.com/CtsLucas" target="_blank">
+        <a id="userLink" href="https://github.com/CtsLucas" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          luucas_cts</a
+          <span id="userLogin">luucas_cts</span></a
         >
 
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -59,27 +62,6 @@
         </ul>
       </div>
     </main>
-
-    <script>
-      const linksSocialMedia = {
-        github: 'CtsLucas',
-        youtube: 'channel/UCu3nplaAhpIKgYlbga_egNQ',
-        facebook: 'cts.lucas',
-        twitter: 'cndohana',
-        instagram: 'luucas_cts'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-          //alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
