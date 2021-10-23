@@ -19,9 +19,11 @@ body {
 
 main {
   background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
+  height: 812px;
+  width: 375px;
+  left: 1525px;
+  top: 0px;
+  border-radius: 0px;
 }
 
 .container {
@@ -87,4 +89,53 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+li {
+  padding-left: 1em;
+}
+li:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 960px) {
+  /* estilos versão desktop */
+  body {
+    background: url(images/backgroundDektop.svg) no-repeat center/cover;
+    position: relative;
+  }
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    height: 650px;
+    width: 400px;
+    left: 541px;
+    border-radius: 15px;
+  }
+  .faixa {
+    background: url(images/faixa.svg) no-repeat center/ cover;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 200px;
+    width: 64px;
+    top: 0px;
+    border-radius: 0px;
+  }
+
+  .quebra {
+    background: url(images/quebra.svg) no-repeat center/ cover;
+    position: absolute;
+    height: 12px;
+    width: 80px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 }
