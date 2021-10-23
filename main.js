@@ -2,7 +2,7 @@ const linksSocialMedia = {
   github: 'CtsLucas',
   youtube: 'channel/UCu3nplaAhpIKgYlbga_egNQ',
   facebook: 'cts.lucas',
-  twitter: 'cndohana',
+  twitter: 'LuucasCts',
   instagram: 'luucas_cts'
 }
 
